@@ -1,0 +1,49 @@
+---
+
+---
+
+<nav>
+  <a href='/'>Home</a>
+  <a href='/blog'>Blog</a>
+</nav>
+
+<style>
+  nav {
+    background-color: hsl(0, 0%, 16%); /* Dark background */
+    color: hsl(0, 0%, 100%); /* Light text */
+    display: flex;
+  }
+
+  nav a {
+    display: block;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-weight: bold;
+    color: #5797b8;
+    /* background-color: aquamarine; */
+  }
+
+  /* nav li a:hover {
+    color: #c00;
+  } */
+
+  nav a:hover,
+  nav a:focus {
+    color: hsl(
+      0,
+      0%,
+      87%
+    ); /* Lighter link text on hover/focus for better visibility */
+    background-color: hsl(199, 24%, 18%);
+  }
+
+  @media (max-width: 500px) {
+    nav li {
+      float: none;
+    }
+
+    nav li a {
+      padding: 1em;
+    }
+  }
+</style>
